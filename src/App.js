@@ -12,7 +12,7 @@ function App() {
     <HashRouter>
       <Routes>
         <Route exact path="/" element={<Home />}/>
-        <Route path={"/new"} element={<New />}/>
+        <Route exact path={"/new"} element={<New />}/>
         {/* <Suspense fallback={<Fragment />}>
 
         </Suspense> */}
