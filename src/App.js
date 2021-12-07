@@ -9,18 +9,17 @@ import React,{useState} from 'react';
 
 function App() {
 
-  // const account = useSelector((state)=>state.account);
-  // const dispatch = useDispatch();
-  
-  // const {depositMoney,withdrawMoney} = bindActionCreators(actionCreators,dispatch);
-  const [state,setState] = useState(GA)
-  let g = Google
-  let ga = GA
+  const  {src} = useSelector((state)=>state.logo);
+  const dispatch = useDispatch();
+  const {switchToGA,switchToGoogle} = bindActionCreators(actionCreators,dispatch);
+
+
   return (
     <div className="App">
       <h1>Nice to Meet UUU!!!</h1>
-      <img alt="" src={state} width="300" height="300"/>
-      <button onClick={()=>setState(prev=>prev===ga?g:ga)}>Switch!!!</button>
+      <img alt="" src={src} width="300" height="300"/>
+      <button onClick={switchToGA}>Switch to GA!!!</button>
+      <button onClick={switchToGoogle}>Switch to Google!!!</button>
     </div>
   );
 }

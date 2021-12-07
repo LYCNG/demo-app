@@ -15,3 +15,18 @@ export const withdrawMoney =(amount)=>{
         })
     }
 }
+
+export const switchToGA =()=>{
+    return (dispatch)=>{
+        dispatch({
+            type:'google_Analytics',
+        })
+    }
+};
+export const switchToGoogle =()=>{
+    return (dispatch)=>{
+        dispatch({
+            type:'google',
+        })
+    }
+};
