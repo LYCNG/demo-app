@@ -4,7 +4,7 @@ function New() {
     return (
         <div>
             <h1>nothing here</h1>
-            <button onClick={()=>window.location.href="/"}>go to News</button>
+            <button onClick={()=>window.location.href="#/"}>go to home</button>
         </div>
     )
 }
