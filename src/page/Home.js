@@ -14,7 +14,7 @@ function Home() {
             <img alt="" src={src} width="300" height="300"/>
             <button onClick={switchToGA}>Switch to GA!!!</button>
             <button onClick={switchToGoogle}>Switch to Google!!!</button>
-            <button onClick={()=>window.location.href="/#/new"}>go to News</button>
+            <button onClick={()=>window.location.href="demo-app/#/new"}>go to News</button>
         </div>
     )
 }
